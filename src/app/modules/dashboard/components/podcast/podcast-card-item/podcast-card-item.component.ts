@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Vehiculo } from '../../../models/nft';
 
 @Component({
     selector: 'app-podcast-card-item',
@@ -7,7 +8,14 @@ import { Component, Input } from '@angular/core';
 })
 export class PodcastCardItemComponent {
 
-  @Input() title: string = '';
-  @Input() subtitle: string = '';
-  @Input() image: string = '';
+  // @Input() title: string = '';
+  // @Input() subtitle: string = '';
+  // @Input() image: string = '';
+  // @Input() price: number = 0;
+
+@Input() vehiculo:Vehiculo ={};
+// constructor(){
+//   this
+// }
+
 }

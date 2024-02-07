@@ -1,0 +1,25 @@
+<div class="h-full bg-[#540803]">
+  <app-main-banner></app-main-banner>
+    <div class="w-full bg-[#540803]">
+      <div class="row mt-8">
+        <h3 class="text-sm font-semibold uppercase text-white dark:text-white">SHOP</h3>
+          <div class="grid mt-4 gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+            <ng-container *ngFor="let vehiculo of vehiculos">
+              <!-- [subtitle]="vehiculo.subtitle" -->
+              <!-- [price]="vehiculo.price"
+              [image]="vehiculo.image" -->
+              <!-- title]="vehiculo.title"  -->
+              <app-podcast-card-item
+                     [vehiculo]="vehiculo"
+                   >
+              </app-podcast-card-item>
+            
+            </ng-container>
+          </div>
+          <div class="row mt-8">
+            <h3 class="text-sm font-semibold uppercase dark:text-white">List of Podcast</h3>
+          <!-- <app-podcast-list></app-podcast-list> -->
+          </div>
+      </div>
+    </div>
+</div>

@@ -20,7 +20,7 @@ export class Menu {
           label: 'Tienda',
           route: '/dashboard',
           children: [
-            { label: 'Home', route: '/dashboard/podcast' },
+            { label: 'Tienda', route: '/dashboard/tienda' },
           ],
         },
         {

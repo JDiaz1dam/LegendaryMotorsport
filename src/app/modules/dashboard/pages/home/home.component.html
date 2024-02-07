@@ -1,23 +1,27 @@
-<div class="h-full w-full bg-red-700">
+<div class="h-full bg-red-900">
     <app-main-banner></app-main-banner>
-    <div class="h-full w-full bg-green-700">
-        <div class="bg-yellow-700">
-            HOLA
+    <div class="w-full bg-green-700">
+        <div class="flex justify-center bg-red-900 p-12">
+            <a class="text-center text-white text-2xl">Una web de coches, en la que podrás visualizar una gama de coches ordenados por categorías, además dicha aplicación dispondrá de un apartado de azar en la que podrás poner a prueba tu suerte pudiendo ganar uno de los automóviles disponibles en la lista, diariamente.</a>
         </div>
-        <div class="bg-blue-700">
-            <div class="w-[1101px] h-[123px] flex justify-between items-center gap-[81px] inline-flex">
-                <div class="flex">
-                    <div class="w-[313px] h-[123px] bg-gray-500">
-                        <button></button>
-                    </div>
-                    <div class="w-[313px] h-[123px] bg-gray-500">
-                        <button></button>
-                    </div>
-                    <div class="w-[313px] h-[123px] bg-gray-500">
-                        <button></button>
-                    </div>
+        <div class="bg-red-900 p-6">
+            <div class="h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
+                <div class="text-center h-full bg-red-700 shadow p-3">
+                    <button>
+                        <a href="/auth/sign-in" class="text-white text-5xl font-normal font-['Fjalla One']">INICIA SESIÓN</a>
+                    </button>
                 </div>
-            </div>             
+                <div class="text-center h-full bg-red-700 shadow p-3">
+                    <button>
+                        <a href="/auth/sign-up" class="text-white text-5xl font-normal font-['Fjalla One']">REGÍSTRATE</a>
+                    </button>
+                </div>
+                <div class="text-center h-full bg-red-700 shadow p-3">
+                    <button>
+                        <a href="/dashboard/tienda" class="text-white text-5xl font-normal font-['Fjalla One']">TIENDA</a>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

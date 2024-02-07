@@ -1,10 +1,10 @@
-<div class="group relative isolate w-full rounded-md bg-white p-4 text-gray-200 dark:bg-night-700">
+<div class="group relative isolate w-screen md:w-auto rounded-md bg-[#300502] p-4 text-gray-200 dark:bg-night-700 mx-4">
   <div class="h-full">
     <div class="relative mb-4">
       <div class="relative pb-[100%]">
         <div>
           <img
-            [src]="image"
+            [src]="vehiculo?.image"
             alt="podcast cover image"
             class="absolute left-0 top-0 h-full w-full object-cover object-center" />
         </div>
@@ -25,7 +25,9 @@
         </div>
       </div>
     </div>
-    <div class="truncate text-sm font-semibold text-black dark:text-night-50">{{ title }}</div>
-    <div class="truncate text-xs text-gray-500 dark:text-night-300">{{ subtitle }}</div>
+    <div class="p-2 truncate text-sm font-semibold text-white dark:text-night-50">{{ vehiculo?.title }}</div>
+    <div class="p-2 truncate text-xs text-white dark:text-night-300">{{ vehiculo?.subtitle }}</div>
+    <div class="p-2 truncate text-xs text-white dark:text-night-300">{{ vehiculo?.price }}</div>
   </div>
 </div>
+

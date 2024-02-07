@@ -1,11 +1,24 @@
 export interface Nft {
   id: number;
-  title: string;
+  title?: string;
   last_bid?: number;
-  price: number;
+  price?: string;
   creator?: string;
   avatar?: string;
   instant_price?: number;
   ending_in?: string;
-  image: string;
+  image?: string;
+}
+
+export interface Vehiculo {
+  id?: number;
+  title?: string;
+  subtitle?: string;
+  last_bid?: number;
+  price?: number;
+  creator?: string;
+  avatar?: string;
+  instant_price?: number;
+  ending_in?: string;
+  image?: string;
 }
