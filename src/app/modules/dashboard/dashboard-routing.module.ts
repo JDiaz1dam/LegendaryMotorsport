@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PodcastComponent } from './pages/podcast/podcast.component';
 import { RuletaComponent } from './pages/ruleta/ruleta.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,9 @@ const routes: Routes = [
       { path: 'podcast', component: PodcastComponent },
       { path: 'tienda', component: TiendaComponent },
       { path: 'ruleta', component: RuletaComponent },
+      { path: 'carrito', component: CarritoComponent },
       { path: '**', redirectTo: 'error/404' },
+      
     ],
   },
 ];

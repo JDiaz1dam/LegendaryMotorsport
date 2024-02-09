@@ -21,8 +21,10 @@ export class Menu {
           route: '/dashboard',
           children: [
             { label: 'Tienda', route: '/dashboard/tienda' },
+            { label: 'Carrito', route: '/dashboard/carrito' },
           ],
         },
+
         {
           icon: 'assets/icons/heroicons/outline/lock-closed.svg',
           label: 'Auth',
@@ -41,53 +43,6 @@ export class Menu {
             label: 'Ruleta',
             route: '/dashboard/ruleta',
           },
-      ],
-    },
-    {
-      group: 'Collaboration',
-      separator: true,
-      items: [
-        {
-          icon: 'assets/icons/heroicons/outline/download.svg',
-          label: 'Download',
-          route: '/download',
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/gift.svg',
-          label: 'Gift Card',
-          route: '/gift',
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/users.svg',
-          label: 'Users',
-          route: '/users',
-        },
-      ],
-    },
-    {
-      group: 'Config',
-      separator: false,
-      items: [
-        {
-          icon: 'assets/icons/heroicons/outline/cog.svg',
-          label: 'Settings',
-          route: '/settings',
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/bell.svg',
-          label: 'Notifications',
-          route: '/gift',
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/folder.svg',
-          label: 'Folders',
-          route: '/folders',
-          children: [
-            { label: 'Current Files', route: '/folders/current-files' },
-            { label: 'Downloads', route: '/folders/download' },
-            { label: 'Trash', route: '/folders/trash' },
-          ],
-        },
       ],
     },
   ];

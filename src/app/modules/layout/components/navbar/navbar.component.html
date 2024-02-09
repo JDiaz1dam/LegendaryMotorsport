@@ -1,6 +1,6 @@
 <div class="relative bg-white dark:bg-night-700">
   <div class="mx-auto px-5">
-    <div class="flex items-center justify-between py-3.5 md:justify-start">
+    <div class="flex items-right justify-between py-3 md:justify-end">
       <!-- Mobile Navigation Menu Button-->
       <div class="sm:order-1 md:hidden">
         <button
@@ -26,7 +26,10 @@
       <div class="hidden space-x-10 sm:order-3 md:flex">
         <app-navbar-menu></app-navbar-menu>
       </div>
-
+      <!-- Carrito menu -->
+      <div class="hidden sm:order-4 md:flex md:flex-1 lg:w-0 lg:ml-auto">
+        <app-carrito-menu></app-carrito-menu>
+      </div>
       <!-- Profile menu -->
       <div class="items-center justify-end sm:order-4 md:flex md:flex-1 lg:w-0">
         <app-profile-menu></app-profile-menu>

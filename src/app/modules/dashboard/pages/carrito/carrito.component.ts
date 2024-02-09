@@ -8,8 +8,8 @@ import { MainBannerComponent } from '../../components/main/main-banner/main-bann
 import { Vehiculo } from '../../models/nft';
 
 @Component({
-    selector: 'app-tienda',
-    templateUrl: './tienda.component.html',
+    selector: 'app-carrito',
+    templateUrl: './carrito.component.html',
     standalone: true,
     imports: [
         PodcastHeaderComponent,
@@ -17,11 +17,10 @@ import { Vehiculo } from '../../models/nft';
         PodcastPlayerComponent,
         NgFor,
         PodcastCardItemComponent,
-        MainBannerComponent,
-        PodcastCardItemComponent
+        MainBannerComponent
     ],
 })
-export class TiendaComponent  implements OnInit{
+export class CarritoComponent  implements OnInit{
 
   public vehiculos:Vehiculo[] = [
     { title: "Aston Martin", subtitle: "Aston Martin Valkyrie", price: 1, image: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/Aston_Martin_Valkyrie.jpg?tf=3840x" },
