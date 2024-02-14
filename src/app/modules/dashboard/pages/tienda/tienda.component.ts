@@ -41,14 +41,9 @@ export class TiendaComponent  implements OnInit{
     { title: "Rolls Royce", subtitle: "Rolls Royce Dawn", price: 1, image: "https://car-images.bauersecure.com/wp-images/12100/rolls-royce-dawn01.jpg" },
   ]
 
-  public carrito: Vehiculo[] = []; // Arreglo para mantener los vehículos seleccionados
+  public carrito: Vehiculo[] = [];
 
   ngOnInit(): void {
-    // Inicializar tus vehículos
-  }
-
-  // Función para manejar el clic del botón de añadir al carrito
-  agregarAlCarrito(vehiculo: Vehiculo): void {
-    this.carrito.push(vehiculo); // Agregar el vehículo al carrito
+    
   }
 }
