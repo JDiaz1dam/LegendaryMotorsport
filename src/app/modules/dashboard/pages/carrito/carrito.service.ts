@@ -20,4 +20,14 @@ export class CarritoService {
   vaciarCarrito() {
     this.carrito = [];
   }
+
+  calcularPrecioTotal(): number {
+    let total = 0;
+    this.carrito.forEach(vehiculo => {
+      if (vehiculo && vehiculo.price !== undefined) {
+        total += vehiculo.price;
+      }
+    });
+    return total;
+  }
 }

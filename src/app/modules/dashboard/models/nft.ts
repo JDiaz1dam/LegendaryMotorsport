@@ -21,4 +21,5 @@ export interface Vehiculo {
   instant_price?: number;
   ending_in?: string;
   image?: string;
+  cantidad?: number;
 }

@@ -25,6 +25,7 @@ import { CarritoService } from './carrito.service';
 export class CarritoComponent  implements OnInit{
 
   carrito: Vehiculo[] = [];
+  cantidad: number = 1;
 
   constructor(private carritoService: CarritoService) { }
 
@@ -35,5 +36,9 @@ export class CarritoComponent  implements OnInit{
   vaciarCarrito() {
     this.carritoService.vaciarCarrito();
     this.carrito = [];
+  }
+
+  calcularPrecioTotal(): number {
+    return this.carritoService.calcularPrecioTotal();
   }
 }
