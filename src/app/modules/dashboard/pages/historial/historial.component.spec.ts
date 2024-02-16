@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RuletaComponent } from './ruleta.component';
+import { HistorialComponent } from './historial.component';
 
 describe('NftComponent', () => {
-  let component: RuletaComponent
-  let fixture: ComponentFixture<RuletaComponent>;
+  let component: HistorialComponent
+  let fixture: ComponentFixture<HistorialComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [RuletaComponent],
+    imports: [HistorialComponent],
 }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RuletaComponent);
+    fixture = TestBed.createComponent(HistorialComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PodcastComponent } from './pages/podcast/podcast.component';
-import { RuletaComponent } from './pages/ruleta/ruleta.component';
+import { HistorialComponent } from './pages/historial/historial.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 
@@ -16,7 +16,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'podcast', component: PodcastComponent },
       { path: 'tienda', component: TiendaComponent },
-      { path: 'ruleta', component: RuletaComponent },
+      { path: 'historial', component: HistorialComponent },
       { path: 'carrito', component: CarritoComponent },
       { path: '**', redirectTo: 'error/404' },
       

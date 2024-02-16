@@ -39,9 +39,9 @@ export class Menu {
         },
           {
             
-            icon: 'assets/icons/heroicons/outline/roulette.svg',
-            label: 'Ruleta',
-            route: '/dashboard/ruleta',
+            icon: 'assets/icons/heroicons/outline/history-svgrepo-com.svg',
+            label: 'Historial',
+            route: '/dashboard/historial',
           },
       ],
     },

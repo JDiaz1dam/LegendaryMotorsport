@@ -14,7 +14,18 @@ export class CarritoService {
   }
 
   agregarAlCarrito(vehiculo: Vehiculo) {
-    this.carrito.push(vehiculo);
+    const vehiculoExistente = this.carrito.find(item => item.subtitle === vehiculo.subtitle);
+
+    if (vehiculoExistente) {
+        if (vehiculoExistente.cantidad !== undefined) {
+            vehiculoExistente.cantidad += 1;
+        } else {
+            vehiculoExistente.cantidad = 1;
+        }
+    } else {
+        vehiculo.cantidad = 1;
+        this.carrito.push(vehiculo);
+    }
   }
 
   vaciarCarrito() {
@@ -24,10 +35,11 @@ export class CarritoService {
   calcularPrecioTotal(): number {
     let total = 0;
     this.carrito.forEach(vehiculo => {
-      if (vehiculo && vehiculo.price !== undefined) {
-        total += vehiculo.price;
+      if (vehiculo && vehiculo.price !== undefined && vehiculo.cantidad !== undefined) {
+        total += vehiculo.price * vehiculo.cantidad;
       }
     });
     return total;
-  }
+}
+
 }
