@@ -5,10 +5,10 @@
     <!-- Logo -->
     <div class="relative h-10">
       <div class="flex items-center" *ngIf="menuService.showSideBar">
-        <a class="flex items-center justify-center rounded bg-primary-500 p-2 focus:outline-none focus:ring-1">
+        <a class="flex items-center justify-center rounded bg-red-500 p-2 focus:outline-none focus:ring-1">
           <svg-icon src="assets/icons/logo.svg"> </svg-icon>
         </a>
-        <b class="ml-1 pl-2 text-sm font-bold dark:text-night-50">
+        <b class="ml-1 pl-2 text-sm font-bold dark:text-white">
           {{ appJson.displayName }}
         </b>
       </div>
@@ -22,7 +22,7 @@
 
     <!-- Separator -->
     <div class="pt-3">
-      <hr class="border-dashed border-gray-200 dark:border-night-500" />
+      <hr class="border-dashed border-gray-200 dark:border-red-500" />
     </div>
 
     <!-- Menu Items -->
@@ -33,15 +33,15 @@
     <!-- Dark Theme -->
     <div
       (click)="toggleTheme()"
-      class="group flex h-9 cursor-pointer items-center justify-start rounded p-2 hover:bg-gray-100 dark:hover:bg-night-600">
+      class="group flex h-9 cursor-pointer items-center justify-start rounded p-2 hover:bg-red-100 dark:hover:bg-red-600">
       <svg-icon
         [src]="
           themeService.isDark ? 'assets/icons/heroicons/outline/sun.svg' : 'assets/icons/heroicons/outline/moon.svg'
         "
-        [svgClass]="'h-5 w-5 text-gray-400 dark:text-night-400'">
+        [svgClass]="'h-5 w-5 text-gray-400 dark:text-red-400'">
       </svg-icon>
 
-      <a class="ml-3 truncate text-xs font-semibold tracking-wide text-gray-600 focus:outline-none dark:text-night-100">
+      <a class="ml-3 truncate text-xs font-semibold tracking-wide text-gray-600 focus:outline-none dark:text-red-100">
         {{ themeService.isDark ? 'Light Theme' : 'Dark Theme' }}
       </a>
 
