@@ -4,7 +4,7 @@
         <h3 class="text-7xl font-semibold uppercase text-center text-white dark:text-white" style="padding: 20px; margin: 30px;">Historial</h3>
         <div class="grid mt-4 gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <ng-container *ngFor="let vehiculo of historial">
-            <div class="relative mb-4 flex flex-col items-center bg-[#300502] rounded p-4 text-white" style="padding: 20px; margin: 30px;">            <!-- Cambiado a flex y alineado al centro, con fondo azul -->
+            <div class="relative mb-4 flex flex-col items-center bg-[#300502] rounded p-4 text-white border-2 border-black" style="padding: 20px; margin: 30px;">            <!-- Cambiado a flex y alineado al centro, con fondo azul -->
               <div class="relative" style="width: 150px; height: 150px;"> <!-- Tamaño definido para el contenedor de la imagen -->
                 <img
                   [src]="vehiculo?.image"
@@ -34,7 +34,7 @@
           </ng-container>
         </div>
         <div style="display: flex; align-items: center;">
-            <button class="text-4xl bg-red-700 text-white rounded-r" style="padding: 10px 20px; margin-left: 30px;" (click)="vaciarHistorial()">Vaciar historial</button>
+            <button class="text-4xl bg-red-700 text-white rounded-r border-2 border-black hover:bg-red-500" style="padding: 10px 20px; margin-left: 30px;" (click)="vaciarHistorial()">Vaciar historial</button>
           </div>   
       </div>
     </div>

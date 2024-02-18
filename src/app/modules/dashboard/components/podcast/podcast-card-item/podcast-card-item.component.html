@@ -1,6 +1,6 @@
-<div class="group relative isolate w-screen md:w-auto rounded-md bg-[#300502] p-4 text-gray-200 dark:bg-night-700 mx-4">
+<div class="group relative isolate w-screen md:w-auto rounded-md bg-[#300502] p-4 text-gray-200 dark:bg-red-800 mx-4 hover:scale-105 transition-transform border-2 border-black">
   <div class="h-full">
-    <div class="relative mb-4" (click) = "seleccionarCoche(vehiculo)">
+    <div class="relative mb-4" (click)="seleccionarCoche(vehiculo)">
       <div class="relative pb-[100%]">
         <div>
           <img
@@ -25,9 +25,10 @@
         </div>               
       </div>
     </div>
-    <div class="p-2 truncate text-sm font-semibold text-white dark:text-night-50">{{ vehiculo?.title }}</div>
-    <div class="p-2 truncate text-xs text-white dark:text-night-300">{{ vehiculo?.subtitle }}</div>
-    <div class="p-2 truncate text-xs text-white dark:text-night-300">{{ vehiculo?.price }} €</div>
+    <div class="p-2 truncate text-sm font-semibold text-white dark:text-black">{{ vehiculo?.title }}</div>
+    <div class="p-2 truncate text-xs text-white dark:text-black">{{ vehiculo?.subtitle }}</div>
+    <div class="p-2 truncate text-xs text-white dark:text-black">{{ vehiculo?.price }} €</div>
   </div>
 </div>
+
 
